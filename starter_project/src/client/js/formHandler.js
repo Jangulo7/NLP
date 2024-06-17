@@ -11,14 +11,28 @@ form.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
     event.preventDefault();
 
+    // Check what text was out into the form field
+    let formText = document.getElementById('name').value
+
+    Client.checkForName(formText)
+
+    console.log(": : : Form submitted : : :")
+    fetch('http://localhost:8081/test')
+    .then(res => {
+        return res.json()
+    })
+    .then(function(data) {
+        document.getElementById('results').innerHTML = data.message
+    })
+
+
     // Get the URL from the input field
-    const formText = document.getElementById('name').value;
+    //const formText = document.getElementById('name').value;
 
     // This is an example code that checks the submitted name. You may remove it from your code
-    checkForName(formText);
+    //checkForName(formText);
     
     // Check if the URL is valid
- 
         // If the URL is valid, send it to the server using the serverURL constant above
       
 }
