@@ -23,14 +23,22 @@
 
         <main>
             <section>
+                <h1>NLP app</h1>
+                <p> This is the front-end of an app that uses NLP on articles or blogs found on third-parties’ websites. This app will help users to classify the text/information available in the blogs or articles.  It will tell users whether the content is an opinion (subjective) or is fact-based (objective).  It will also tell users about the tone of the article -  positive,  negative or neutral.</p>
+            </section>
+            <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" placeholder="Name">
+                    <input id="name" type="text" name="input" value="" placeholder="thirdpartywebsite.com/blog" >
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
                 </form>
             <section>
 
             <section>
-                <strong>Form Results:</strong>
+                <h2>Information:</h2>
+                &nbsp;
+                <div id="target" class="target">
+                </div>
+                <h2>Details:</h2>
                 <div id="results"></div>
             </section>
         </main>
