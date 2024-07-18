@@ -2,7 +2,7 @@
 
 The objective of this project is to develop a web app that allows users to run a Natural Language Processing (NLP) API on blogs or articles (news) found on third-parties websites.
 
-The project includes:
+The project includes
 
 1. Setting up Webpack
 2. Using SaaS styles
