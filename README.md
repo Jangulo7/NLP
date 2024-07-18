@@ -80,5 +80,5 @@ Any of the mentioned, used or cited trademarks, collective marks, copyrights, de
 
 # Author
 
-This project was created by Jangulo.
+This project was created by Johanna Angulo.
 
