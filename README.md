@@ -27,34 +27,34 @@ To install dependencies: npm install
 
 **List of Dependencies**
 
- body-parser: 1.20.2
- cors: 2.8.5",
- dotenv: 16.4.5
- express: 4.19.2
- node-fetch: 3.3.2
- npm: 10.8.1
- webpack: 5.93.0
- webpack-cli: 5.1.4
+ - body-parser: 1.20.2
+ - cors: 2.8.5",
+ - dotenv: 16.4.5
+ - express: 4.19.2
+ - node-fetch: 3.3.2
+ - npm: 10.8.1
+ - webpack: 5.93.0
+ - webpack-cli: 5.1.4
 
   **Development Dependencies**
 
-  @babel/core: 7.24.7
-  @babel/preset-env: 7.24.7
-  babel-loader: 8.3.0
-  clean-webpack-plugin: 4.0.0
-  css-loader: 6.11.0
-  css-minimizer-webpack-plugin: 7.0.0
-  html-webpack-plugin: 5.6.0
-  jest: 29.7.0
-  mini-css-extract-plugin: 2.9.0
-  node-sass: 9.0.0
-  sass: 1.77.8
-  sass-loader: 14.2.1
-  style-loader: 4.0.0
-  terser-webpack-plugin: 5.3.10
-  webpack: 5.90.3
-  webpack-dev-server: 5.0.2
-  workbox-webpack-plugin: 7.1.0
+  - @babel/core: 7.24.7
+  - @babel/preset-env: 7.24.7
+  - babel-loader: 8.3.0
+  - clean-webpack-plugin: 4.0.0
+  - css-loader: 6.11.0
+  - css-minimizer-webpack-plugin: 7.0.0
+  - html-webpack-plugin: 5.6.0
+  - jest: 29.7.0
+  - mini-css-extract-plugin: 2.9.0
+  - node-sass: 9.0.0
+  - sass: 1.77.8
+  - sass-loader: 14.2.1
+  - style-loader: 4.0.0
+  - terser-webpack-plugin: 5.3.10
+  - webpack: 5.90.3
+  - webpack-dev-server: 5.0.2
+  - workbox-webpack-plugin: 7.1.0
 
 # Running
 
