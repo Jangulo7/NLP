@@ -3,29 +3,41 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const fetch = require(node-fetch)
 const dotenv = require('dotenv')
-const express = express()
 const cors = require('cors')
 const { Console } = require('console')
 
 dotenv.config()
 
+// Variables for url and api key
+const API_MC = process.env.API_MC 
+
 // Start an instance of app
 const app = express()
 
-app.use(cors());
-app.use(bodyParser.json());
+// Configurating Express to use Body-parser as middleware
+app.use(bodyParser.urlencoded({ extended: false}))
+app.use(bodyParser.json())
 
-console.log(__dirname);
+app.use(cors())
 
-// Variables for url and api key
+// Initialization of main project folder
+app.use(express.static('dist'))
 
+// Server setup
+const port = process.env.port || 8081
+app.listen((port), () => {
+    console.log("Server running")
+    console.log('running on localhost:${port}')
+})
 
-app.get('/', function (req, res) {
-    res.send("This is the server API page, you may access its services via the client app.");
-});
-
+// Routes
+//GET Route
+app.get('/', function (req, res){
+    res.sendFile("dist/index.html")
+})
 
 // POST Route
+
 
 
 
