@@ -23,7 +23,7 @@ app.use(cors())
 // Initialization of main project folder
 app.use(express.static('dist'))
 
-// Server setup
+// Designates what port the app will listen to for incoming requests
 const port = process.env.port || 8081
 app.listen((port), () => {
     console.log("Server running")
@@ -37,13 +37,13 @@ app.get('/', function (req, res){
 })
 
 // POST Route
-
-
-
-
-// Designates what port the app will listen to for incoming requests
-app.listen(8080, function () {
-    console.log('Example app listening on port 8080!')
+app.post('/dataAnalyze', (req, res) => {
+    const urltext = req.body["formText"]
+    const langua = "en"
+    const response = fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${API_MC}&url=${urltext}&lang=${langua}`)
+    .then(response => response.json())
+    .then(response => res.send(response))
+    .catch(error => console.log('Error: ', error));
 })
 
 
